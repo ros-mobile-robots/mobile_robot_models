@@ -4,7 +4,7 @@
   <!-- ros_control plugin -->
   <gazebo>
     <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
-      <robotNamespace>/mobile_robot</robotNamespace>
+      <robotNamespace>/quimera_robot</robotNamespace>
       <!--robotParam>/robot_description</robotParam-->
       <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
       <legacyModeNS>True</legacyModeNS>
@@ -33,4 +33,20 @@
     <xacro:set_wheel_friction link="front_right_wheel" friction="200"/>
   </xacro:macro>
 
+  <gazebo reference="back_left_wheel">
+    <material>Gazebo/Black</material>
+    <selfCollide>false</selfCollide>
+  </gazebo>
+  <gazebo reference="front_left_wheel">
+    <material>Gazebo/Red</material>
+    <selfCollide>false</selfCollide>
+  </gazebo>
+  <gazebo reference="back_right_wheel">
+    <material>Gazebo/Black</material>
+    <selfCollide>false</selfCollide>
+  </gazebo>
+  <gazebo reference="front_right_wheel">
+    <material>Gazebo/Red</material>
+    <selfCollide>false</selfCollide>
+  </gazebo>
 </robot>
