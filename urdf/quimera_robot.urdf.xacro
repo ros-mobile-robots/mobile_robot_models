@@ -1,11 +1,12 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="quimera_robot">
 
-  <xacro:property name="package_name" value="mobile_robot_description"/>
+  <xacro:property name="package_name" value="mobile_robot_models"/>
   <xacro:property name="robot_name" value="quimera_robot"/>  
+  <xacro:property name="package_lib" value="mobile_robot_description"/>
 
-  <xacro:include filename="$(find ${package_name})/urdf/include/common_macros.urdf.xacro" />
-  <xacro:include filename="$(find ${package_name})/urdf/include/common_sensors.xacro" />
+  <xacro:include filename="$(find ${package_lib})/urdf/include/common_macros.urdf.xacro" />
+  <xacro:include filename="$(find ${package_lib})/urdf/include/common_sensors.xacro" />
   <xacro:include filename="$(find ${package_name})/urdf/quimera_robot.gazebo.xacro" />
 
   <!-- <xacro:include filename="$(find hector_sensors_description)/urdf/generic_camera.urdf.xacro" /> -->
