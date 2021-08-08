@@ -1,0 +1,9 @@
+repositories:
+  mobile_robot_description:
+    type: git
+    url: https://github.com/ros-mobile-robots/mobile_robot_description
+    version: master
+  mobile_robot_models:
+    type: git
+    url: https://github.com/ros-mobile-robots/mobile_robot_models
+    version: main
